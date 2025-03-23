@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
+
+body {
+  font-family: 'Muli', sans-serif;
+  background: #ddd;
+}
+
+.box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: relative;
+  margin: 24px auto 0;
+}
+
+.butn {
+  padding: 12px 30px;
+  border: 1px solid #313131;
+  background: #212121;
+  display: block;
+  margin: -21px auto 0;
+  z-index: 1;
+  position: relative;
+  width: fit-content;
+  text-decoration: none;
+  color: #fff !important;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 27px;
+  transition: all 0.05s ease-in-out;
+  font-size: 12px;
+  height: 42px;
+  font-weight: bold;
+  border: 0 !important;
+}
+
+.box:hover .butn {
+  border-color: #ddd;
+  box-shadow: none;
+  padding: 11px 28px;
+}
+
+.h3tag {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.box .img_box {
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 22px;
+  height: 325px;
+  position: absolute;
+  top: 5px;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.box .img_box img {
+  max-height: 300px;
+  max-width: 100%;
+  border-radius: 5px;
+
+}
+
+.box:hover .img_box {
+  transition: all 0.2s ease-in-out;
+  margin-top: -40px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.box .text_box {
+  padding-top: 325px;
+}
+
+.box .para {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.box .c_flx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.box .ic_on {
+  display: block;
+  color: #212121;
+  text-align: center;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  border: 1px solid #212121;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.box .price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.red {
+  color: #F44336;
+  font-size: 22px;
+  display: inline-block;
+  margin: 0 5px;
+}
+.ic_on.added{
+  border: 1px solid transparent;  
+  background-color: orange;
+}
+.form-control {
+  border-radius: 5px;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  max-width: 250px;
+}
